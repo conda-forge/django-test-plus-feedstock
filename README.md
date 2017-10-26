@@ -18,9 +18,7 @@ carpal tunnel by at least 3 weeks!
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/django-test-plus-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/django-test-plus-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/django-test-plus-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/django-test-plus-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/django-test-plus-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/django-test-plus-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/django-test-plus-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/django-test-plus-feedstock)
 
 Current release info
 ====================
@@ -70,6 +68,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
