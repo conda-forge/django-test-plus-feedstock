@@ -1,6 +1,6 @@
 {% set name = "django-test-plus" %}
-{% set version = "1.0.18" %}
-{% set sha256 = "076a292e93856f37d10e7a2044df62fa4d1dd98472e8b41b441ed16a2d2f36ad" %}
+{% set version = "1.0.20" %}
+{% set sha256 = "dd10b80613a7c994999d1240277245ef0792c104b42879219db6db2ffcb68a6a" %}
 
 package:
   name: {{ name|lower }}
@@ -14,6 +14,7 @@ source:
 build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python  
 
 requirements:
   build:
