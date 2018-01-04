@@ -1,6 +1,6 @@
 {% set name = "django-test-plus" %}
-{% set version = "1.0.20" %}
-{% set sha256 = "dd10b80613a7c994999d1240277245ef0792c104b42879219db6db2ffcb68a6a" %}
+{% set version = "1.0.21" %}
+{% set sha256 = "b0289208b8325a959c2316bc5f54e082f518f7305424db32c70ac16d612fa839" %}
 
 package:
   name: {{ name|lower }}
