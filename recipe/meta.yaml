@@ -1,6 +1,6 @@
 {% set name = "django-test-plus" %}
-{% set version = "1.0.22" %}
-{% set sha256 = "cdfa439642c660a1c65af5add140a2dcf360e71daa65740d87e9e53cb8509d6b" %}
+{% set version = "2.1.0" %}
+{% set sha256 = "e88950642be75a57a43c81b3e0f87f4bf3bd17340fe7dad44ffd62773c0cba5a" %}
 
 package:
   name: {{ name|lower }}
@@ -14,10 +14,10 @@ source:
 build:
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
-  noarch: python  
+  noarch: python
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
   run:
@@ -29,8 +29,8 @@ about:
   home: https://github.com/revsys/django-test-plus
   license: BSD-3-Clause
   license_family: BSD
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE' 
-  summary: 'Useful additions to Django default TestCase'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  summary: Useful additions to Django default TestCase
   description: |
     Let's face it, writing tests isn't always fun. Part of the reason for that is all of the 
     boilerplate you end up writing. django-test-plus is an attempt to cut down on some of 
