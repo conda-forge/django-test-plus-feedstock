@@ -22,6 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.8
+    - django >=1.8
 
 test:
   commands:
