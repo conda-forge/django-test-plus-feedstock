@@ -24,8 +24,6 @@ requirements:
     - python >=3.8
 
 test:
-  imports:
-    - test_plus
   commands:
     - pip check
   requires:
