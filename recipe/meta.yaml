@@ -20,6 +20,7 @@ requirements:
     - pytest-runner
     - pytest-django
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
     - django >=1.8
