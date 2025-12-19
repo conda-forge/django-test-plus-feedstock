@@ -1,13 +1,13 @@
 {% set name = "django-test-plus" %}
-{% set version = "2.3.0" %}
+{% set version = "2.4.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/django-test-plus-{{ version }}.tar.gz
-  sha256: 05c153186c4122a42b14bbc5f8a546f34a0e0a714c26afb8ff23868ffc4c8e87
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 5bc0e2248c25020f7056056c4173250213f93464b4ceb6a53ab79804a1968d0d
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
     - pip
     - setuptools
   run:
+    - packaging
     - pytest
     - python >={{ python_min }}
     - django >=1.8
