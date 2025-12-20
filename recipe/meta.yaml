@@ -19,8 +19,8 @@ requirements:
     - python {{ python_min }}
     - pytest-runner
     - pytest-django
+    - hatchling
     - pip
-    - setuptools
   run:
     - packaging
     - pytest
