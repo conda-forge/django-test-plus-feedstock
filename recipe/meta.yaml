@@ -1,5 +1,5 @@
 {% set name = "django-test-plus" %}
-{% set version = "2.6.0" %}
+{% set version = "2.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: ee1d4069f2686642aabbd98afc3b73b70b4fc7e2bf7b83fdfc0bd98cf02713b8
+  sha256: 42f62e92b702bdc522228f28fbbbb9ea2d25177ba4b7bb0baf61e1b327d9fcc9
 
 build:
   noarch: python
